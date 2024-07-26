@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 0.1px;
+}
+
+.first-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #F1E3DA;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+    text-transform: uppercase;
+
+}
+
+.first-list li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.first-list li a.active {
+  background-color: #B47957;
+  color: white;
+}
+
+.first-list li a:hover:not(.active) {
+  background-color: #B47957;
+  color: white;
+}
+
+.first-list li:first-child a {
+  background-color: #DFB299;
+  color: #000;
+}
+
+.first-list li:last-child a{
+    background-color: #DFB299;
+  color: #000;
+    position: fixed;
+  bottom: 0;
+  left: 0;
+    width: 166px;
+  text-align: center;
+  padding: 8px 16px;
+}
+.second-list {
+  list-style-type: none;
+  padding: 0;
+  width: 400px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  margin: 70px auto 0;
+}
+
+.second-list li {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.second-list li:last-child {
+  border-bottom: none;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.search-bar {
+  width: 400px;
+  height: 30px;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+header input[type="text"] {
+  border: 2px solid #333;
+}
+
+ .load-more-container {
+   text-align: center;
+   margin-top: 70px;
+ }
+
+.load-more-container #load-more-button {
+  color: #000;
+  background-color: #F1E3DA;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+.load-more-container #load-more-button:hover {
+  background-color: #B47957;
+  color: white;
+}
+.delete-button {
+  color: #000;
+  background-color: #F1E3DA;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+.delete-button:hover {
+  background-color: #B47957;
+  color: white;
+}

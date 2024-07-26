@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Welcome </title>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+
+</head>
+
+<body>
+<section class="header">
+    <nav>
+        <div class="nav-links">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+                <li><a href="register.html">SIGN UP</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="text-box">
+        <h1>Rent a smile</h1>
+        <p>Platforma ta pentru anunturi de inchiriere spatii</p>
+        <a href="login.html" class="add-button">LOGIN</a>
+    </div>
+
+</section>
+
+<!---Anunturi tipuri--->
+
+<section class="types" id="about">
+    <h1>About</h1>
+    <h2>Ca utilizator, poti cauta sau pune anunturi de inchiriere pentru spatii precum:</h2>
+    <div class="row">
+        <div class="col">
+            <img src="images/sala.jpg" onclick="zoomImage(this)">
+            <div class="layer">
+                <h3>Sali de evenimente</h3>
+            </div>
+        </div>
+
+        <div class="col">
+            <img src="images/cabana.jpg" onclick="zoomImage(this)">
+            <div class="layer">
+                <h3>Cabane</h3>
+            </div>
+        </div>
+
+        <div class="col">
+            <img src="images/casa.jpg" onclick="zoomImage(this)">
+            <div class="layer">
+                <h3>Case pe plaja</h3>
+            </div>
+        </div>
+    </div>
+
+
+    <h2>De asemenea, </h2>
+    <h2>Trebuie doar sa iti faci un cont gratuit si poti incepe</h2>
+    <a href="login.html" class="add-button">LOGIN</a>
+</section>
+    
+
+<!---Contact-footer--->
+<section class="footer" id="contact">
+    <h4>Contact</h4>
+    <p>Pentru orice problema legata de cont trimiteti un mail la adresa rent.a.smile@gmail.com</p>
+</section>
+
+<script>
+    if (window.location.href.indexOf('#about') > -1 || window.location.href.indexOf('#contact') > -1) {
+        // Redirect to index.html
+        window.location.replace('index.html');
+    }
+</script>
+
+</body>
+
+</html>

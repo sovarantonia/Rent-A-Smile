@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Login </title>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/register.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js" defer></script>
+
+	</head>
+
+	<body>
+            <div class="login-box">
+                <form id="register-form" method="post" action="register.php" novalidate>
+                    
+                <p> First name: </p>
+                <input type="text" id="firstName" name="firstName" placeholder="First name">
+<!--                <span id="first-name-error" class="error-message"></span>-->
+
+                <p> Last name: </p>
+                <input type="text" id="lastName" name="lastName" placeholder="Last name"> 
+<!--                <span id="last-name-error" class="error-message"></span>-->
+
+                <p>Email: </p>
+                <input type="text" id="sign-up-email" name="email" placeholder="Email" novalidate>
+<!--                <span id="sign-up-email-error" class="error-message"></span>-->
+
+                <p>Password:</p>
+                <input type="password" id="sign-up-password" name="password" placeholder="Password">
+<!--                <span id="sign-up-password-error" class="error-message"></span>-->
+
+                <p>Confirm password:</p>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm password">
+<!--                <span id="confirm-password-error" class="error-message"></span>-->
+
+                <input type="submit" value="Sign up" class="button-container">
+                    
+                <a href="login.html">LOGIN</a> 
+                
+                </form>
+                <script src="js/register.js" defer></script>
+            </div>
+
+    </body>
+    
+</html>
